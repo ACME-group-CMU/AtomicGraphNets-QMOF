@@ -1,0 +1,5 @@
+# Run the job on TRACE
+sbatch -t 5:00:00 -n 8 qmof.job
+
+# Check the process of the job
+squeue -u tzuhsuac
