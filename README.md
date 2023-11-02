@@ -11,7 +11,7 @@ To use this code, you need to have Julia installed on your system along with sev
    using Pkg
    ```
    ```
-   Pkg.add("...") # Replace ... with the package name you want to add
+   Pkg.add("...")  # Replace ... with the package name you want to add
    ```
 Packages used in this code:
 - [CSV](https://csv.juliadata.org/stable/)
@@ -29,6 +29,22 @@ Packages used in this code:
 1. Data preparation - [data.jl](https://github.com/ACME-group-CMU/AtomicGraphNets-QMOF/blob/main/data.jl): before training, data is read and prepared.
 2. Machine learning model - [model.jl](https://github.com/ACME-group-CMU/AtomicGraphNets-QMOF/blob/main/model.jl): implement the ML model.
 3. Initiate training process - [train.jl](https://github.com/ACME-group-CMU/AtomicGraphNets-QMOF/blob/main/train.jl): parallelly train the ML model.
+
+## Running job on TRACE
+1. Create a file with the code that you want to run on TRACE.
+2. Create a batch script like [run_job.job](https://github.com/ACME-group-CMU/AtomicGraphNets-QMOF/blob/main/run_job.job).
+   
+   - Replace *'/trace/home/tzuhsuac/julia-1.8.5/bin/julia'* with the path containing Julia in your TRACE.
+   - Replace *'qmof.jl'* with the file containing the code you want to run.
+3. Submit the batch script by typing the following command in TRACE command-line.
+   ```
+   sbatch run_job.job  # Replace run_job.job with your script
+   ```
+4. Check on the job progress by typing the following command in TRACE command-line.
+   ```
+   squeue -u ...  # Replace ... with your Andrew ID
+   ```
+Please refer to [TRACE Public Resources](https://cmu-enterprise.atlassian.net/wiki/spaces/TPR/overview?homepageId=2301461445) for detailed information and other options to the sbatch command.
 
 ## Data
 ### Properties of Chemical Elements
