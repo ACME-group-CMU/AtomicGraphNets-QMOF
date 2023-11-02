@@ -1,0 +1,9 @@
+#!/bin/bash
+set -x
+
+echo Job started on `hostname` at `date`
+
+/trace/home/tzuhsuac/julia-1.8.5/bin/julia qmof.jl
+
+echo
+echo Job Ended at `date`
