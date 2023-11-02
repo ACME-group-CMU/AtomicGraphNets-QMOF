@@ -56,5 +56,5 @@ The data related to the QMOF database is hosted on Figshare, bearing the permane
 
 ## Citation
 - Rosen, Andrew S., et al. "Machine learning the quantum-chemical properties of metal–organic frameworks for accelerated materials discovery." *Matter* 4.5 (2021): 1578-1597. DOI: [10.1016/j.matt.2021.02.015](https://www.sciencedirect.com/science/article/pii/S2590238521000709?via%3Dihub).
-- Xie, Tian, and Jeffrey C. Grossman. "Crystal graph convolutional neural networks for an accurate and interpretable prediction of material properties." *Physical review letters* 120.14 (2018): 145301. DOI: [10.1103/physrevlett.120.145301](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.120.145301)
+- Xie, Tian, and Jeffrey C. Grossman. "Crystal graph convolutional neural networks for an accurate and interpretable prediction of material properties." *Physical review letters* 120.14 (2018): 145301. DOI: [10.1103/physrevlett.120.145301](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.120.145301).
 
