@@ -2,8 +2,8 @@
 DESCRIPTION
 ---------------------------------------------------------------------------------------------------------
 This code trains a machine learning model, specifically a Convolutional Graph Neural Network (CGCNN),
-to predict formation energies or related properties for quantum materials. It's designed to run in a 
-distributed computing environment, accessible across all spawned Julia processes.
+to predict bandgap or related properties for quantum materials. It's designed to run in a distributed 
+computing environment, accessible across all spawned Julia processes.
 """
 
 # Distributed computing: total 7 workers process for parallel computation
