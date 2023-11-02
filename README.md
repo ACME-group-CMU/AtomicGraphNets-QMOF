@@ -34,8 +34,8 @@ Packages used in this code:
 1. Create a file with the code that you want to run on TRACE.
 2. Create a batch script like [run_job.job](https://github.com/ACME-group-CMU/AtomicGraphNets-QMOF/blob/main/run_job.job).
    
-   - Replace *'/trace/home/tzuhsuac/julia-1.8.5/bin/julia'* with the path containing Julia in your TRACE.
-   - Replace *'qmof.jl'* with the file containing the code you want to run.
+   - Replace *" /trace/home/tzuhsuac/julia-1.8.5/bin/julia "* with the path containing Julia in your TRACE.
+   - Replace *" qmof.jl "* with the file containing the code you want to run.
 3. Submit the batch script by typing the following command in TRACE command-line.
    ```
    sbatch run_job.job  # Replace run_job.job with your script
