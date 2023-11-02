@@ -30,7 +30,7 @@ end
 )
 
     """
-    PARAMTER
+    PARAMETER
     ---------------------------------------------------------------------------------------------------------------
     num_pts                   : Number of data points to use from the dataset
     IE,EA,VO,GR,RO,BL,CR,X,VA : Feature parameters or descriptors related to material properties
