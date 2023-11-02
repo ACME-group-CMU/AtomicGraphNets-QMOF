@@ -48,8 +48,10 @@ Please refer to [TRACE Public Resources](https://cmu-enterprise.atlassian.net/wi
 
 ## Data
 ### Chemical Element Properties
-The CSV file containing the required property values for each element can be found [here](https://github.com/ACME-group-CMU/AtomicGraphNets-QMOF/blob/main/dataset/property.xlsx).
+The CSV file containing the required property values for each element can be found [here](https://github.com/ACME-group-CMU/AtomicGraphNets-QMOF/blob/main/dataset/property.csv).
 ### QMOF
+The CSV file containing the required property values for each QMOFs can be found [here](https://github.com/ACME-group-CMU/AtomicGraphNets-QMOF/blob/main/dataset/qmof.csv)
+
 The landing page for the QMOF database can be found at this [GitHub repository](https://github.com/arosen93/QMOF). 
 
 The data associated with the QMOF database is hosted on Figshare with the permanent DOI: [10.6084/m9.figshare.13147324](https://figshare.com/articles/dataset/QMOF_Database/13147324).
