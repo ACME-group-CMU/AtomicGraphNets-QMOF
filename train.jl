@@ -12,7 +12,7 @@ data_dir = "..."
     model, results = train_formation_energy(num_pts = 20375, IE=I, EA=EA, VO=V, GR=G, RO=P ,BL=B ,CR=R ,X=X, VA=VA)
     
     # Construct the filepath for the output file, unique for each worker process
-    filepath = string(data_dir, "20000_", i, ".txt")
+    filepath = string(data_dir, i, ".txt")
 
     # Write the results of the training process to a text file
     open(filepath, "w") do f
