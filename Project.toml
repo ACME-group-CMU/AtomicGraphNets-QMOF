@@ -1,0 +1,19 @@
+name = "QMOF"
+uuid = "8c55b08d-b2bd-485d-ade9-98afb25cdbb3"
+version = "0.1.0"
+authors = ["Tzu-Hsuan Chen <tzuhsuac@andrew.cmu.edu>"]
+
+[deps]
+AtomGraphs = "5a360db7-3336-4c46-b5a1-be4fe079ea55"
+AtomicGraphNets = "ccdf130a-3c88-4595-a023-a7e7f78b9dd5"
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
+ChemistryFeaturization = "6c925690-434a-421d-aea7-51398c5b007a"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+Distributed = "8ba89e20-285c-5b6f-9357-94700520ee1b"
+Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+
+[compat]
+julia = "1.8.5"
