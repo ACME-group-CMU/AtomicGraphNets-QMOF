@@ -11,7 +11,7 @@ To use this code, you need to have Julia installed on your system along with sev
    using Pkg
    Pkg.activate("path/to/qmof_env")  # Replace "path/to/qmof_env" with the path where you want to create the environment
    ```
-4. Add Julia packages: open the Julia command line and type the following command.
+4. Add Julia packages in [Project.toml](https://github.com/ACME-group-CMU/AtomicGraphNets-QMOF/blob/main/Project.toml).
    ```
    using Pkg
    Pkg.add("...")  # Replace "..." with the package in Project.toml
