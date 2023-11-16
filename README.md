@@ -22,6 +22,8 @@ To use this code, you need to have Julia installed on your system along with sev
 2. Machine learning model - [model.jl](https://github.com/ACME-group-CMU/AtomicGraphNets-QMOF/blob/main/model.jl): implement the ML model.
 3. Initiate training process - [train.jl](https://github.com/ACME-group-CMU/AtomicGraphNets-QMOF/blob/main/train.jl): train the ML model in parallel.
 
+Combine these three files into one, then you can run the prediction on TRACE.
+
 ## Data
 ### Chemical Element Properties
 The CSV file containing the required property values for each element can be found [here](https://github.com/ACME-group-CMU/AtomicGraphNets-QMOF/blob/main/dataset/property.csv).
