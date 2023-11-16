@@ -4,8 +4,8 @@ DESCRIPTION
 This code is about data preparation
 """
 
-# Read information about quantum materials from a CSV file (replace this w/ your directory)
-info = CSV.read("./qmof/property.csv", DataFrame)
+# Read information about quantum materials from a CSV file 
+info = CSV.read("./qmof/property.csv", DataFrame) # Replace "./qmof/property.csv" with the file containing chemical element properties
 
 # Create a new DataFrame to store relevant material properties
 df = DataFrame()
