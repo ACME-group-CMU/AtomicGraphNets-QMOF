@@ -25,7 +25,7 @@ end
     num_pts,
     IE,EA,VO,GR,RO,BL,CR,X,VA,
     num_epochs = 50,
-    data_dir = "./qmof/",                                                      
+    data_dir = "./qmof/",     # Replace "./qmof/" with your directory                                                  
     verbose = true
 )
 
@@ -35,7 +35,7 @@ end
     num_pts                   : Number of data points to use from the dataset
     IE,EA,VO,GR,RO,BL,CR,X,VA : Feature parameters or descriptors related to material properties
     num_epochs                : Number of training epochs
-    data_dir                  : Directory containing the dataset and related files (replace this w/ your directory)
+    data_dir                  : Directory containing the dataset and related files 
     verbose                   : Flag to control the verbosity of output for monitoring training progress
 
     OUTPUT
@@ -49,12 +49,12 @@ end
     result = ["Setting things up..."]                                           
 
     # Data-related options: define the training/testing split
-    train_frac = 0.8  # Fraction of the dataset to be used for trainin
+    train_frac = 0.8  # Fraction of the dataset to be used for training
     num_train = Int32(round(train_frac * num_pts))
     num_test = num_pts - num_train
 
     # Target properties and dataset identifiers
-    target = "qmof"                                                                                
+    target = "qmof"  # Replace "qmof" with the name of the file containing the QMOF properties                                                                               
     prop = "outputs.pbe.bandgap"                                                                   
     id = "qmof_id"  # Field by which to label each input material                                   
 
@@ -69,7 +69,7 @@ end
     opt = ADAM(0.001)  
 
     # Read dataset and shuffle data, picking a subset for training/testing
-    info = CSV.read(string(data_dir, target, ".csv"), DataFrame)                                   
+    info = CSV.read(string(data_dir, target, ".csv"), DataFrame)                                
     y = Array(Float32.(info[!, Symbol(prop)]))
     indices = shuffle(1:size(info, 1))[1:num_pts]                
     info = info[indices, :]
@@ -83,7 +83,7 @@ end
     inputs = FeaturizedAtoms[]
 
     for r in eachrow(info)
-        cifpath = string(data_dir, "relaxed_structures/", r[Symbol(id)], ".cif")                   
+        cifpath = string(data_dir, "relaxed_structures/", r[Symbol(id)], ".cif")  # Replace "relaxed_structures/" with the folder containing structure of QMOF                  
         gr = AtomGraph(cifpath)
         input = featurize(gr, featurization)
         push!(inputs, input)
